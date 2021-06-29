@@ -52,7 +52,7 @@
   <ItemGroup>
     <Compile Include="BindableBase.cs" />
     <Compile Include="CANConfig.cs" />
-    <Compile Include="CodeFile1.cs" />
+    <Compile Include="CallerAttribute.cs" />
     <Compile Include="ConfigGenerator.cs" />
     <Compile Include="EIPConfig.cs" />
     <Compile Include="Form1.cs">

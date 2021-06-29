@@ -34,3 +34,15 @@ C:\Users\99232\Desktop\WAGOCANOpenTemplate\WAGOTemplate\obj\Debug\WAGOTemplate.c
 C:\Users\99232\Desktop\WAGOCANOpenTemplate\WAGOTemplate\obj\Debug\WAGOTemplate.pdb
 C:\Users\99232\Desktop\WAGOCANOpenTemplate\WAGOTemplate\bin\Debug\WAGOTemplate.exe
 C:\Users\99232\Desktop\WAGOCANOpenTemplate\WAGOTemplate\obj\Debug\WAGOTemplate.exe
+C:\Users\99232\Desktop\Github\MTestCommTemp\WAGOCANOpenTemplate\WAGOTemplate\bin\Debug\WAGOTemplate.exe
+C:\Users\99232\Desktop\Github\MTestCommTemp\WAGOCANOpenTemplate\WAGOTemplate\bin\Debug\WAGOTemplate.pdb
+C:\Users\99232\Desktop\Github\MTestCommTemp\WAGOCANOpenTemplate\WAGOTemplate\bin\Debug\Newtonsoft.Json.dll
+C:\Users\99232\Desktop\Github\MTestCommTemp\WAGOCANOpenTemplate\WAGOTemplate\bin\Debug\Newtonsoft.Json.xml
+C:\Users\99232\Desktop\Github\MTestCommTemp\WAGOCANOpenTemplate\WAGOTemplate\obj\Debug\WAGOTemplate.csproj.AssemblyReference.cache
+C:\Users\99232\Desktop\Github\MTestCommTemp\WAGOCANOpenTemplate\WAGOTemplate\obj\Debug\WAGOTemplate.Form1.resources
+C:\Users\99232\Desktop\Github\MTestCommTemp\WAGOCANOpenTemplate\WAGOTemplate\obj\Debug\WAGOTemplate.Properties.Resources.resources
+C:\Users\99232\Desktop\Github\MTestCommTemp\WAGOCANOpenTemplate\WAGOTemplate\obj\Debug\WAGOTemplate.csproj.GenerateResource.cache
+C:\Users\99232\Desktop\Github\MTestCommTemp\WAGOCANOpenTemplate\WAGOTemplate\obj\Debug\WAGOTemplate.csproj.CoreCompileInputs.cache
+C:\Users\99232\Desktop\Github\MTestCommTemp\WAGOCANOpenTemplate\WAGOTemplate\obj\Debug\WAGOTemplate.csproj.CopyComplete
+C:\Users\99232\Desktop\Github\MTestCommTemp\WAGOCANOpenTemplate\WAGOTemplate\obj\Debug\WAGOTemplate.exe
+C:\Users\99232\Desktop\Github\MTestCommTemp\WAGOCANOpenTemplate\WAGOTemplate\obj\Debug\WAGOTemplate.pdb

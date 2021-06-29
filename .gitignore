@@ -1,0 +1,6 @@
+#忽略以下的文件
+
+/WAGOCANOpenTemplate/.vs/*
+/WAGOCANOpenTemplate/packages
+/WAGOCANOpenTemplate/WAGOTemplate/bin/Debug/WAGOTemplate.exe
+WAGOCANOpenTemplate/WAGOTemplate/bin/Debug/WAGOTemplate.pdb
