@@ -198,24 +198,26 @@
             // 
             // comboBox1
             // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "WAGO"});
-            this.comboBox1.Location = new System.Drawing.Point(149, 27);
+            this.comboBox1.Location = new System.Drawing.Point(133, 27);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(111, 20);
+            this.comboBox1.Size = new System.Drawing.Size(127, 20);
             this.comboBox1.TabIndex = 5;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // comboBox2
             // 
+            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Items.AddRange(new object[] {
             "EtherNet/IP(EIP)",
             "CANOPen"});
-            this.comboBox2.Location = new System.Drawing.Point(149, 71);
+            this.comboBox2.Location = new System.Drawing.Point(133, 71);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(111, 20);
+            this.comboBox2.Size = new System.Drawing.Size(127, 20);
             this.comboBox2.TabIndex = 6;
             this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
@@ -242,7 +244,7 @@
             this.AcceptButton = this.button1;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(296, 472);
+            this.ClientSize = new System.Drawing.Size(296, 438);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.comboBox2);
@@ -263,6 +265,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MaximizeBox = false;
             this.Name = "FormMain";
+            this.ShowIcon = false;
             this.Text = "MTestCommTemplate";
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownDI)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownDO)).EndInit();
