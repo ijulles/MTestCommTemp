@@ -1,6 +1,6 @@
 ﻿namespace WAGOTemplate
 {
-    partial class Form1
+    partial class FormMain
     {
         /// <summary>
         /// 必需的设计器变量。
@@ -237,7 +237,7 @@
             this.label8.TabIndex = 8;
             this.label8.Text = "Protocol";
             // 
-            // Form1
+            // FormMain
             // 
             this.AcceptButton = this.button1;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -262,8 +262,8 @@
             this.Controls.Add(this.numericUpDownDI);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MaximizeBox = false;
-            this.Name = "Form1";
-            this.Text = "WAGOCANOpenTemplate";
+            this.Name = "FormMain";
+            this.Text = "MTestCommTemplate";
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownDI)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownDO)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAI)).EndInit();
