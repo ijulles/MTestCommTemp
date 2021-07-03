@@ -23,16 +23,12 @@ namespace WAGOTemplate
         {
             if (this.comboBox1.SelectedIndex == 0 & this.comboBox2.SelectedIndex == 0)
             {
-                CheckAndUpdateChannels0();
+                CheckAndUpdateChannelsWAGOEIP();
             }
-            else
+            else if (this.comboBox1.SelectedIndex == 0 & this.comboBox2.SelectedIndex == 1)
             {
-                if (this.comboBox1.SelectedIndex == 0 & this.comboBox2.SelectedIndex == 1)
-                {
-                    CheckAndUpdateChannels1();
-                }
-            }
-            
+                CheckAndUpdateChannelsWAGOCANOpen();
+            }        
         }
 
         private void Button1_Click(object sender, EventArgs e)
@@ -46,9 +42,19 @@ namespace WAGOTemplate
                 file.CheckPathExists = true;
                 if (file.ShowDialog() == DialogResult.OK)
                 {
-                    var can = WAGOCANOpen.CreateSlaveConfig((int)numericUpDownDI.Value, (int)numericUpDownDO.Value,
-                      (int)numericUpDownAI.Value, (int)numericUpDownAO.Value, (int)numericUpDownUC.Value, textBox1.Text, textBox1.Text);
-                    ConfigGenerator.Export(file.FileName, can);
+                    if (this.comboBox1.SelectedIndex == 0 & this.comboBox2.SelectedIndex == 0)
+                    {
+                        var eip = WAGOEIP.CreateSlaveConfig((int)numericUpDownDI.Value, (int)numericUpDownDO.Value,
+                            (int)numericUpDownAI.Value, (int)numericUpDownAO.Value, (int)numericUpDownUC.Value, textBox1.Text, textBox1.Text);
+                        ConfigGenerator.Export(file.FileName, eip);
+                    }
+                    else if (this.comboBox1.SelectedIndex == 0 & this.comboBox2.SelectedIndex == 1)
+                    {
+                        var can = WAGOCANOpen.CreateSlaveConfig((int)numericUpDownDI.Value, (int)numericUpDownDO.Value,
+                            (int)numericUpDownAI.Value, (int)numericUpDownAO.Value, (int)numericUpDownUC.Value, textBox1.Text, textBox1.Text);
+                        ConfigGenerator.Export(file.FileName, can);
+                    }
+
                 }
 
                     
@@ -58,16 +64,13 @@ namespace WAGOTemplate
         private void ChangeFileName()
         {
             int c = 337;
-            if (this.comboBox1.SelectedIndex == 0 & this.comboBox2.SelectedIndex == 1)
+            if (this.comboBox1.SelectedIndex == 0 & this.comboBox2.SelectedIndex == 0)
+            {
+                c = 363;
+            }
+            else if (this.comboBox1.SelectedIndex == 0 & this.comboBox2.SelectedIndex == 1)
             {
                 c = 337;
-            }
-            else
-            {
-                if (this.comboBox1.SelectedIndex == 0 & this.comboBox2.SelectedIndex == 0)
-                {
-                    c = 363;
-                }
             }
             StringBuilder s = new StringBuilder($"WAGO {c}");
             if (numericUpDownDI.Value != 0)
@@ -93,7 +96,7 @@ namespace WAGOTemplate
             textBox1.Text = s.ToString();
         }
 
-        private bool CheckAndUpdateChannels0()
+        private bool CheckAndUpdateChannelsWAGOCANOpen()
         {
             bool pass;
             if (WAGOCANOpen.CalTPDOLength((int)numericUpDownDI.Value, (int)numericUpDownAI.Value, (int)numericUpDownUC.Value) <= 24)
@@ -128,7 +131,7 @@ namespace WAGOTemplate
             return pass;
         }
 
-        private bool CheckAndUpdateChannels1()
+        private bool CheckAndUpdateChannelsWAGOEIP()
         {
             bool pass;
             if (WAGOEIP.CalTPDOBytes((int)numericUpDownDI.Value, (int)numericUpDownAI.Value, (int)numericUpDownUC.Value) <= 255)
