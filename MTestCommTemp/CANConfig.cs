@@ -40,7 +40,7 @@ namespace WAGOTemplate
     {
         public PDOTypeEnum PDOType;
         public double Time;
-        public string PDOMaping;
+        public string PDOMapping;
         public string Name;
         public string Description;
         public uint Identifier;

@@ -80,7 +80,7 @@ namespace WAGOTemplate
             signal.DataType = DataTypeEnum.Default;
 
             pdo.Time = 0.1;
-            pdo.PDOMaping = "";
+            pdo.PDOMapping = "";
 
             slaveConfig.PDOs = new PDO[CalTPDOLength(di, ai, uc) + CalRPDOLength(doo, ao)];
             slaveConfig.Description = des;
@@ -124,7 +124,7 @@ namespace WAGOTemplate
                 {
                     pdom[i / 8] = 0x20000108 + 0x100 * (uint)(i / 8);
                 }
-                pdo.PDOMaping = pdom.Format();
+                pdo.PDOMapping = pdom.Format();
                 pdo.Name = $"TPDO{tpdoCount + 1:d3}";
                 pdo.Description = "DI Channels";
 
@@ -165,7 +165,7 @@ namespace WAGOTemplate
                     {
                         pdom[j] = 0x24000110 + 0x100 * (uint)(j + i * 4);   //按顺序maping
                     }
-                    pdo.PDOMaping = pdom.Format();
+                    pdo.PDOMapping = pdom.Format();
                     pdo.Name = $"TPDO{tpdoCount + 1:d3}";
                     pdo.Description = "AI Channels";
                     slaveConfig.PDOs[tpdoCount + rpdoCount] = pdo;
@@ -190,7 +190,7 @@ namespace WAGOTemplate
                     pdo.PDOType = PDOTypeEnum.TPDO;
                     var pdom = new uint[1];
                     pdom[0] = 0x32000130 + 0x100 * (uint)i;   //按顺序maping
-                    pdo.PDOMaping = pdom.Format();
+                    pdo.PDOMapping = pdom.Format();
                     pdo.Name = $"TPDO{tpdoCount + 1:d3}";
                     pdo.Description = "UC Channels";
                     slaveConfig.PDOs[tpdoCount + rpdoCount] = pdo;
@@ -220,7 +220,7 @@ namespace WAGOTemplate
                 {
                     pdom[i / 8] = 0x21000108 + 0x100 * (uint)(i / 8);
                 }
-                pdo.PDOMaping = pdom.Format();
+                pdo.PDOMapping = pdom.Format();
                 pdo.Name = $"RPDO{rpdoCount + 1:d3}";
                 pdo.Description = "DO Channels";
 
@@ -261,7 +261,7 @@ namespace WAGOTemplate
                     {
                         pdom[j] = 0x25000110 + 0x100 * (uint)(j + i * 4);   //按顺序maping
                     }
-                    pdo.PDOMaping = pdom.Format();
+                    pdo.PDOMapping = pdom.Format();
                     pdo.Name = $"RPDO{rpdoCount + 1:d3}";
                     pdo.Description = "AO Channels";
                     slaveConfig.PDOs[tpdoCount + rpdoCount] = pdo;
